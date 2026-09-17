@@ -12,7 +12,7 @@ in `vibeview.json`, the live reload loop (`vibeview dev --platform roku`,
 `r` to reload or `--watch` to reload on save), and device verification by a
 coding agent driving focus with the remote and typing into the on-screen
 keyboard. Read how it was built and verified, with every command and its
-output, at https://vibeview.io/guides/. Copy `vibeview.json` into your own
+output, at https://vibeview.io/guides/ai-agent-built-roku-channel/. Copy `vibeview.json` into your own
 channel project; do not expect much from the channel itself.
 
 Signal was written, iterated on and verified on a real, physical Roku by a
