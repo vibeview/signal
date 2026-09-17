@@ -12,9 +12,13 @@
     <Label id="home.title" text="Signal" translation="[96, 56]" color="0xF2A33AFF" font="font:LargeBoldSystemFont" />
     <SigButton id="home.search" text="Search" translation="[96, 160]" />
     <Label id="row.new.label" text="New this week" translation="[96, 262]" color="0x9AA0ACFF" font="font:MediumBoldSystemFont" />
-    <Group id="row.new" translation="[96, 310]" />
+    <Group id="row.new" translation="[96, 310]" clippingRect="[-20, -20, 1792, 194]">
+      <Group id="row.new.strip" />
+    </Group>
     <Label id="row.talk.label" text="Talk" translation="[96, 522]" color="0x9AA0ACFF" font="font:MediumBoldSystemFont" />
-    <Group id="row.talk" translation="[96, 570]" />
+    <Group id="row.talk" translation="[96, 570]" clippingRect="[-20, -20, 1792, 194]">
+      <Group id="row.talk.strip" />
+    </Group>
     <Label id="home.saved.count" text="Saved: 0 shows" translation="[96, 800]" color="0x9AA0ACFF" font="font:MediumSystemFont" />
   </children>
 </component>

@@ -6,7 +6,9 @@ sub init()
     m.tileWidth = 272
     m.tileHeight = 153
     m.tileGap = 24
-    m.rowNodes = [m.top.findNode("row.new"), m.top.findNode("row.talk")]
+    m.visibleWidth = 1752   ' six tiles: the row window that fits between the margins
+    m.rowNodes = [m.top.findNode("row.new.strip"), m.top.findNode("row.talk.strip")]
+    m.offset = [0, 0]   ' horizontal scroll per row
     m.tiles = [[], []]
     m.col = [0, 0]      ' remembered column per row
     m.row = 0
@@ -71,7 +73,21 @@ sub focusTile(r as integer, c as integer)
     m.zone = "rows"
     m.row = r
     m.col[r] = c
+    scrollRow(r, c)
     m.tiles[r][c].setFocus(true)
+end sub
+
+' Slide the row strip so tile c is fully inside the visible window.
+sub scrollRow(r as integer, c as integer)
+    left = c * (m.tileWidth + m.tileGap)
+    right = left + m.tileWidth
+    offset = m.offset[r]
+    if right - offset > m.visibleWidth then offset = right - m.visibleWidth
+    if left < offset then offset = left
+    if offset <> m.offset[r] then
+        m.offset[r] = offset
+        m.rowNodes[r].translation = [-offset, 0]
+    end if
 end sub
 
 function onKeyEvent(key as string, press as boolean) as boolean
