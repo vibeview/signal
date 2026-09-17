@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A flat button: accent when focused, saved-green when it represents a saved state. -->
+<component name="SigButton" extends="Group">
+  <script type="text/brightscript" uri="pkg:/components/SigButton.brs" />
+  <interface>
+    <field id="text" type="string" onChange="render" />
+    <field id="saved" type="boolean" value="false" onChange="render" />
+    <field id="buttonWidth" type="float" value="220" onChange="layout" />
+    <field id="buttonHeight" type="float" value="64" onChange="layout" />
+  </interface>
+  <children>
+    <Rectangle id="bg" color="0x1C2028FF" />
+    <Label id="label" horizAlign="center" vertAlign="center" color="0xF1EFE8FF">
+      <Font role="font" uri="font:MediumBoldSystemFont" size="30" />
+    </Label>
+  </children>
+</component>

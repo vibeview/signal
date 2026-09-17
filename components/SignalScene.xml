@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="SignalScene" extends="Scene">
+  <script type="text/brightscript" uri="pkg:/components/SignalScene.brs" />
+  <script type="text/brightscript" uri="pkg:/components/SavedStore.brs" />
+  <children>
+    <HomeView id="home" />
+    <DetailView id="detail" visible="false" />
+    <SearchView id="search" visible="false" />
+  </children>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A focusable 16:9 card for one show. Holds real SceneGraph focus. -->
+<component name="ShowTile" extends="Group">
+  <script type="text/brightscript" uri="pkg:/components/ShowTile.brs" />
+  <interface>
+    <field id="show" type="assocarray" onChange="onShow" />
+    <field id="tileWidth" type="float" value="272" onChange="layout" />
+    <field id="tileHeight" type="float" value="153" onChange="layout" />
+  </interface>
+  <children>
+    <Rectangle id="ring" color="0xF2A33AFF" visible="false" />
+    <Poster id="art" loadDisplayMode="scaleToFit" />
+  </children>
+</component>

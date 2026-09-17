@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="DetailView" extends="Group">
+  <script type="text/brightscript" uri="pkg:/components/DetailView.brs" />
+  <interface>
+    <field id="show" type="assocarray" onChange="onShow" />
+    <field id="saved" type="boolean" onChange="onSaved" />
+    <field id="focusRequest" type="string" alwaysNotify="true" onChange="onFocusRequest" />
+    <field id="saveToggled" type="boolean" alwaysNotify="true" />
+    <field id="closeRequested" type="boolean" alwaysNotify="true" />
+  </interface>
+  <children>
+    <Poster id="detail.art" translation="[96, 200]" width="720" height="405" loadDisplayMode="scaleToFit" />
+    <Label id="detail.title" translation="[880, 200]" width="944" color="0xF1EFE8FF">
+      <Font role="font" uri="font:LargeBoldSystemFont" size="56" />
+    </Label>
+    <Label id="detail.meta" translation="[880, 284]" width="944" color="0x9AA0ACFF">
+      <Font role="font" uri="font:MediumSystemFont" size="30" />
+    </Label>
+    <Label id="detail.description" translation="[880, 350]" width="944" wrap="true" lineSpacing="8" color="0xF1EFE8FF">
+      <Font role="font" uri="font:MediumSystemFont" size="30" />
+    </Label>
+    <SigButton id="detail.play" text="Play" translation="[880, 640]" />
+    <SigButton id="detail.save" text="Save" translation="[1124, 640]" />
+    <Timer id="nowPlayingTimer" duration="5" repeat="false" />
+  </children>
+</component>
