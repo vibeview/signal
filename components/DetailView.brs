@@ -8,6 +8,9 @@ sub init()
     m.play = m.top.findNode("detail.play")
     m.save = m.top.findNode("detail.save")
     m.timer = m.top.findNode("nowPlayingTimer")
+    m.title.font.size = 56
+    m.meta.font.size = 30
+    m.description.font.size = 30
     m.timer.observeField("fire", "hideNowPlaying")
     m.nowPlaying = invalid
 end sub
@@ -42,10 +45,8 @@ sub showNowPlaying()
     label.text = "Now playing: " + m.top.show.title
     label.color = "0xF2A33AFF"
     label.translation = [880, 740]
-    font = CreateObject("roSGNode", "Font")
-    font.uri = "font:MediumBoldSystemFont"
-    font.size = 30
-    label.font = font
+    label.font = "font:MediumBoldSystemFont"
+    label.font.size = 30
     m.top.appendChild(label)
     m.nowPlaying = label
     m.timer.control = "start"

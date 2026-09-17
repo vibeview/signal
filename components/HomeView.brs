@@ -13,6 +13,10 @@ sub init()
     m.zone = "rows"     ' "rows" or "search"
     m.searchButton = m.top.findNode("home.search")
     m.savedLabel = m.top.findNode("home.saved.count")
+    m.top.findNode("home.title").font.size = 64
+    m.top.findNode("row.new.label").font.size = 30
+    m.top.findNode("row.talk.label").font.size = 30
+    m.savedLabel.font.size = 30
 end sub
 
 sub onShows()

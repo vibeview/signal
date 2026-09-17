@@ -10,8 +10,6 @@
   </interface>
   <children>
     <Rectangle id="bg" color="0x1C2028FF" />
-    <Label id="label" horizAlign="center" vertAlign="center" color="0xF1EFE8FF">
-      <Font role="font" uri="font:MediumBoldSystemFont" size="30" />
-    </Label>
+    <Label id="label" horizAlign="center" vertAlign="center" color="0xF1EFE8FF" font="font:MediumBoldSystemFont" />
   </children>
 </component>

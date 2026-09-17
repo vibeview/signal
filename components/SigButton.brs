@@ -1,6 +1,7 @@
 sub init()
     m.bg = m.top.findNode("bg")
     m.label = m.top.findNode("label")
+    m.label.font.size = 30
     m.top.focusable = true
     m.top.observeField("focusedChild", "render")
     layout()

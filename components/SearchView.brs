@@ -12,6 +12,9 @@ sub init()
     m.keyboard.observeField("text", "filter")
     m.results = m.top.findNode("search.results")
     m.empty = m.top.findNode("search.empty")
+    m.top.findNode("search.title").font.size = 64
+    m.top.findNode("search.results.label").font.size = 30
+    m.empty.font.size = 30
     m.tiles = []
     m.index = 0
     m.zone = "keyboard"

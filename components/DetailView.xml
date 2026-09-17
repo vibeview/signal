@@ -10,15 +10,9 @@
   </interface>
   <children>
     <Poster id="detail.art" translation="[96, 200]" width="720" height="405" loadDisplayMode="scaleToFit" />
-    <Label id="detail.title" translation="[880, 200]" width="944" color="0xF1EFE8FF">
-      <Font role="font" uri="font:LargeBoldSystemFont" size="56" />
-    </Label>
-    <Label id="detail.meta" translation="[880, 284]" width="944" color="0x9AA0ACFF">
-      <Font role="font" uri="font:MediumSystemFont" size="30" />
-    </Label>
-    <Label id="detail.description" translation="[880, 350]" width="944" wrap="true" lineSpacing="8" color="0xF1EFE8FF">
-      <Font role="font" uri="font:MediumSystemFont" size="30" />
-    </Label>
+    <Label id="detail.title" translation="[880, 200]" width="944" color="0xF1EFE8FF" font="font:LargeBoldSystemFont" />
+    <Label id="detail.meta" translation="[880, 284]" width="944" color="0x9AA0ACFF" font="font:MediumSystemFont" />
+    <Label id="detail.description" translation="[880, 350]" width="944" wrap="true" lineSpacing="8" color="0xF1EFE8FF" font="font:MediumSystemFont" />
     <SigButton id="detail.play" text="Play" translation="[880, 640]" />
     <SigButton id="detail.save" text="Save" translation="[1124, 640]" />
     <Timer id="nowPlayingTimer" duration="5" repeat="false" />
