@@ -1,0 +1,110 @@
+[
+  {
+    "id": "tidewater-hours",
+    "title": "Tidewater Hours",
+    "row": "new",
+    "category": "Documentary",
+    "episodes": 18,
+    "color": "#2F5D8A",
+    "description": "A slow walk along one estuary through a full year of tides. Each episode stays in one place long enough to hear it change. Recorded outdoors, mostly at dawn."
+  },
+  {
+    "id": "long-rehearsal",
+    "title": "The Long Rehearsal",
+    "row": "new",
+    "category": "Arts",
+    "episodes": 41,
+    "color": "#8A3F5D",
+    "description": "Conversations from the weeks before an opening night. Directors, stagehands and understudies talk about the part nobody sees. Every season follows a different production."
+  },
+  {
+    "id": "quiet-machinery",
+    "title": "Quiet Machinery",
+    "row": "new",
+    "category": "Science",
+    "episodes": 27,
+    "color": "#3F6B4E",
+    "description": "How ordinary objects actually work, one mechanism at a time. A zip, a kettle switch, a lift door. Short, precise and oddly calming."
+  },
+  {
+    "id": "paper-compass",
+    "title": "Paper Compass",
+    "row": "new",
+    "category": "Travel",
+    "episodes": 33,
+    "color": "#9C6A2E",
+    "description": "Trips planned with nothing but a paper map and a single day. Wrong turns are kept in. Each episode ends wherever the day ran out."
+  },
+  {
+    "id": "small-weather",
+    "title": "Small Weather",
+    "row": "new",
+    "category": "Nature",
+    "episodes": 15,
+    "color": "#4E5B8A",
+    "description": "The weather of a single garden, a single street, a single window. Fog, frost and the first warm hour of spring. Ten minutes, once a fortnight."
+  },
+  {
+    "id": "ninth-street-signal",
+    "title": "Ninth Street Signal",
+    "row": "new",
+    "category": "Fiction",
+    "episodes": 12,
+    "color": "#6B3F8A",
+    "description": "A serialised story about a pirate radio station that only broadcasts at night. Nobody knows who runs it. Twelve chapters, each one a single broadcast."
+  },
+  {
+    "id": "two-chairs",
+    "title": "Two Chairs",
+    "row": "talk",
+    "category": "Interviews",
+    "episodes": 88,
+    "color": "#8A4A3F",
+    "description": "One host, one guest, two chairs and no notes. Guests are asked to bring a single object and explain it. The rest follows from there."
+  },
+  {
+    "id": "fieldnotes-at-noon",
+    "title": "Fieldnotes at Noon",
+    "row": "talk",
+    "category": "Culture",
+    "episodes": 56,
+    "color": "#3F7A8A",
+    "description": "Lunch-break conversations with people who keep unusual notebooks. Beekeepers, bus drivers, choir masters. Recorded wherever they happen to be at midday."
+  },
+  {
+    "id": "answering-machine",
+    "title": "Answering Machine",
+    "row": "talk",
+    "category": "Advice",
+    "episodes": 74,
+    "color": "#7A6B2E",
+    "description": "Listeners leave a question on a real answering machine. Two hosts play it back and argue about the answer. No question is too small."
+  },
+  {
+    "id": "tin-kettle",
+    "title": "The Tin Kettle",
+    "row": "talk",
+    "category": "Food",
+    "episodes": 39,
+    "color": "#2E7A5A",
+    "description": "Kitchen talk over a boiling kettle. Cooks describe one dish from memory, without a recipe in front of them. The dish is made after the episode, never during."
+  },
+  {
+    "id": "late-draft",
+    "title": "Late Draft",
+    "row": "talk",
+    "category": "Writing",
+    "episodes": 47,
+    "color": "#5A3F8A",
+    "description": "Writers read the version they threw away. Then they explain what changed and why. Sometimes the discarded draft wins."
+  },
+  {
+    "id": "practical-ghosts",
+    "title": "Practical Ghosts",
+    "row": "talk",
+    "category": "History",
+    "episodes": 22,
+    "color": "#8A2E3F",
+    "description": "Local legends checked against the paperwork. Land registries, parish records and old newspapers. Most ghosts turn out to have an address."
+  }
+]
