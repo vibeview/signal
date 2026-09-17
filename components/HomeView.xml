@@ -9,7 +9,7 @@
     <field id="searchRequested" type="boolean" alwaysNotify="true" />
   </interface>
   <children>
-    <Label id="home.title" text="Signal" translation="[96, 56]" color="0xF1EFE8FF" font="font:LargeBoldSystemFont" />
+    <Label id="home.title" text="Signal" translation="[96, 56]" color="0xF2A33AFF" font="font:LargeBoldSystemFont" />
     <SigButton id="home.search" text="Search" translation="[96, 160]" />
     <Label id="row.new.label" text="New this week" translation="[96, 262]" color="0x9AA0ACFF" font="font:MediumBoldSystemFont" />
     <Group id="row.new" translation="[96, 310]" />

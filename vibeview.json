@@ -2,6 +2,7 @@
   "defaultPlatform": "roku",
   "platforms": {
     "roku": {
+      "appId": "signal-59tfspif",
       "build": {
         "command": "mkdir -p out && rm -f out/signal.zip && zip -qr -X out/signal.zip manifest source components images data",
         "artifact": "out/signal.zip"
