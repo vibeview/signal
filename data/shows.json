@@ -54,6 +54,15 @@
     "description": "A serialised story about a pirate radio station that only broadcasts at night. Nobody knows who runs it. Twelve chapters, each one a single broadcast."
   },
   {
+    "id": "static-garden",
+    "title": "Static Garden",
+    "row": "new",
+    "category": "Music",
+    "episodes": 29,
+    "color": "#2E6F7A",
+    "description": "Field recordings of radios left on in greenhouses, sheds and allotments. Music drifts in and out between the weather reports. Nobody is ever interviewed."
+  },
+  {
     "id": "two-chairs",
     "title": "Two Chairs",
     "row": "talk",
