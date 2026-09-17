@@ -1,11 +1,13 @@
 ' Search: a MiniKeyboard, its text box, and a grid of matching tiles.
 
 sub init()
-    m.columns = 6
-    m.tileWidth = 272
-    m.tileHeight = 153
-    m.gapX = 24
-    m.gapY = 20
+    ' The MiniKeyboard fills the left 584x704 px; results sit to its right,
+    ' five smaller tiles per line so all thirteen shows fit on screen.
+    m.columns = 5
+    m.tileWidth = 200
+    m.tileHeight = 113
+    m.gapX = 16
+    m.gapY = 16
     m.keyboard = m.top.findNode("search.keyboard")
     m.keyboard.textEditBox.id = "search.input"
     m.keyboard.textEditBox.hintText = "Show title"
@@ -79,14 +81,20 @@ function onKeyEvent(key as string, press as boolean) as boolean
         return true
     end if
     if m.zone = "keyboard" then
-        if key = "down" and m.tiles.count() > 0 then
+        ' The keyboard consumes presses inside itself; only presses off its
+        ' right or bottom edge reach here.
+        if (key = "right" or key = "down") and m.tiles.count() > 0 then
             focusResult(m.index)
             return true
         end if
         return false
     end if
     if key = "left" then
-        focusResult(m.index - 1)
+        if m.index mod m.columns = 0 then
+            focusKeyboard()
+        else
+            focusResult(m.index - 1)
+        end if
         return true
     else if key = "right" then
         focusResult(m.index + 1)
